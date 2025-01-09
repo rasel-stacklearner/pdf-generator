@@ -1,0 +1,42 @@
+{
+  "author": "Rasel Hossain",
+  "exports": {
+    "./invoice": {
+      "types": "./src/schemas/invoice/index.ts",
+      "default": "./dist/schemas/invoice/index.js"
+    },
+    "./db-client": {
+      "types": "./src/config/client.ts",
+      "default": "./dist/config/client.js"
+    }
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^0.9.0",
+    "dotenv": "^16.3.1",
+    "drizzle-kit": "^0.20.14",
+    "drizzle-orm": "^0.30.4",
+    "drizzle-zod": "^0.5.1",
+    "postgres": "^3.4.3"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/prettier-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "typescript": "catalog:"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@repo/eslint-config/base"
+    ],
+    "root": true
+  },
+  "license": "MIT",
+  "name": "@repo/db",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "db:migrate": "node -r esbuild-register ./src/config/migrate.ts",
+    "db:generate": "drizzle-kit generate:pg --schema=./src/schemas"
+  },
+  "version": "1.0.0"
+}

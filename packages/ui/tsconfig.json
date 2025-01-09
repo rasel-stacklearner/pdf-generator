@@ -1,0 +1,15 @@
+{
+  "extends": "@repo/typescript-config/react.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "./dist",
+    "paths": {
+      "@ui/*": ["src/*"]
+    },
+    "noEmit": false,
+    "sourceMap": false,
+    "declarationDir": "./dist/types",
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
