@@ -1,5 +1,14 @@
 {
+  "name": "@repo/db",
+  "version": "1.0.0",
   "author": "Rasel Hossain",
+  "main": "./dist/index.js",
+  "types": "./dist/types/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w",
+    "clean": "rm -rf dist"
+  },
   "exports": {
     "./invoice": {
       "types": "./dist/types/schemas/index.d.ts",
@@ -29,15 +38,5 @@
       "@repo/eslint-config/base"
     ],
     "root": true
-  },
-  "license": "MIT",
-  "name": "@repo/db",
-  "private": true,
-  "scripts": {
-    "build": "tsc",
-    "dev": "tsc -w",
-    "db:migrate": "node -r esbuild-register ./src/config/migrate.ts",
-    "db:generate": "drizzle-kit generate:pg --schema=./src/schemas"
-  },
-  "version": "1.0.0"
+  }
 }
