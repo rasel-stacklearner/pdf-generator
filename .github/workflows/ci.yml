@@ -20,6 +20,9 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 2
+          
+      - name: Debug - List files after checkout
+        run: ls -la
  
       - name: Setup Node.js environment
         uses: actions/setup-node@v4
@@ -48,6 +51,9 @@ jobs:
  
       - name: Install dependencies
         run: pnpm install
+        
+      - name: Debug - List packages before build
+        run: pnpm list -r
  
       - name: Build
         run: pnpm build --force
