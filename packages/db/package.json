@@ -18,6 +18,10 @@
     "./schemas": {
       "types": "./dist/types/schemas/index.d.ts",
       "default": "./dist/schemas/index.js"
+    },
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "default": "./dist/index.js"
     }
   },
   "dependencies": {
