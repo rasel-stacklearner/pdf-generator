@@ -16,9 +16,9 @@
       "types": "./dist/types/config/client.d.ts",
       "default": "./dist/config/client.js"
     },
-    "./invoice": {
-      "types": "./dist/types/index.d.ts",
-      "default": "./dist/index.js"
+    "./schemas": {
+      "types": "./dist/types/schemas/index.d.ts",
+      "default": "./dist/schemas/index.js"
     }
   },
   "dependencies": {

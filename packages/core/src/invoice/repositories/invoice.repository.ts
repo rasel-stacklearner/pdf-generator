@@ -1,5 +1,5 @@
 import { db } from "@repo/db/db-client";
-import { InvoiceTable, InvoiceItemTable, type Invoice, type NewInvoice, type UpdateInvoice, type NewInvoiceItem } from "@repo/db/invoice";
+import { InvoiceTable, InvoiceItemTable, type Invoice, type NewInvoice, type UpdateInvoice, type NewInvoiceItem } from "@repo/db/schemas";
 import { eq } from "drizzle-orm";
 
 /**
