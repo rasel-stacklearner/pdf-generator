@@ -8,7 +8,7 @@
     ],
     "outDir": "./dist",
     "rootDir": "./src",
-    "moduleResolution": "node16",
+    "moduleResolution": "nodenext",
     "baseUrl": ".",
     "sourceMap": true,
     "declarationDir": "./dist"
