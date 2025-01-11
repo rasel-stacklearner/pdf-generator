@@ -11,7 +11,8 @@
     "moduleResolution": "node16",
     "baseUrl": ".",
     "sourceMap": true,
-    "declarationDir": "./dist/types"
+    "declarationDir": "./dist/types",
+    "noEmit": false
   },
   "include": [
     "src/**/*"

@@ -11,7 +11,8 @@
     "moduleResolution": "nodenext",
     "baseUrl": ".",
     "sourceMap": true,
-    "declarationDir": "./dist"
+    "declarationDir": "./dist",
+        "noEmit": false
   },
   "include": [
     "src/**/*"

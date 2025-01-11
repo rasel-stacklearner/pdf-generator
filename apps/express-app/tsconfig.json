@@ -16,6 +16,7 @@
     "resolveJsonModule": true,
     "sourceMap": true,
     "baseUrl": ".",
+        "noEmit": false
   },
   "include": [
     "src/**/*"
