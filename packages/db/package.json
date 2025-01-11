@@ -11,8 +11,8 @@
   },
   "exports": {
     "./invoice": {
-      "types": "./dist/types/schemas/index.d.ts",
-      "default": "./dist/schemas/index.js"
+      "types": "./dist/types/index.d.ts",
+      "default": "./dist/index.js"
     },
     "./db-client": {
       "types": "./dist/types/config/client.d.ts",
