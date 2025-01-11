@@ -36,7 +36,7 @@ import baseConfig from '../../eslint.config.mjs';
 
 const recommendedConfig = fixupConfigRules(
   compat.extends(
-    "es"
+    "@repo/eslint-config/base.js"
   )
 );
 const expressAppConfig = {
