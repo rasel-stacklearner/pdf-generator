@@ -15,9 +15,16 @@ export const subtractDaysFromDate = (date: Date | string, days: number): Date =>
   return subDays(dateObj, days);
 };
 
-// export const isValidDate = (date: any): boolean => {
-//   if (typeof date === 'string') {
-//     return isValid(parseISO(date));
-//   }
-//   return isValid(date);
-// };
+export const isValidDate = (date: any): boolean => {
+  if (typeof date === 'string') {
+    return isValid(parseISO(date));
+  }
+  return isValid(date);
+};
+
+export const isValidDate2 = (date: any): boolean => {
+  if (typeof date === 'string') {
+    return isValid(parseISO(date));
+  }
+  return isValid(date);
+};
