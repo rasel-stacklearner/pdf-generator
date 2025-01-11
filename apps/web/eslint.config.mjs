@@ -11,9 +11,9 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   ...compat.extends(
-    "@repo/eslint-config/next-js",
-    "@repo/eslint-config/react-internal"
-  ),
+        "@repo/eslint-config/nextjs",
+     "next/typescript"),
 ];
+
 
 export default eslintConfig;
