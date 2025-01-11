@@ -1,4 +1,4 @@
-import { type NewInvoice, type NewInvoiceItem } from "@repo/db/schemas";
+import { type NewInvoice, type NewInvoiceItem } from "@repo/db";
 import { InvoiceRepository } from "../repositories/invoice.repository";
 
 

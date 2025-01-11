@@ -3,26 +3,13 @@
   "version": "1.0.0",
   "author": "Rasel Hossain",
   "private": "true",
+  "main": "./src/index.ts",
   "scripts": {
     "build": "tsc",
     "dev": "tsc -w",
     "clean": "rm -rf dist",
     "db:migrate": "node -r esbuild-register ./src/config/migrate.ts",
     "db:generate": "drizzle-kit generate:pg --schema=./src/schemas"
-  },
-  "exports": {
-    "./db-client": {
-      "types": "./dist/types/config/client.d.ts",
-      "default": "./dist/config/client.js"
-    },
-    "./schemas": {
-      "types": "./dist/types/schemas/index.d.ts",
-      "default": "./dist/schemas/index.js"
-    },
-    ".": {
-      "types": "./dist/types/index.d.ts",
-      "default": "./dist/index.js"
-    }
   },
   "dependencies": {
     "@neondatabase/serverless": "^0.9.0",
