@@ -16,9 +16,6 @@
       "@/*": [
         "./*"
       ],
-      "@repo/ui/*": [
-        "../packages/ui/src/*"
-      ]
     },
     "noEmit": true
   },

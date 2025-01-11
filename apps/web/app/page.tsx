@@ -1,9 +1,9 @@
 
-import {Button} from '@repo/ui/components/ui/button';
-export default function AboutPage() {
+
+export default function HomePage() {
   return (
     <main className="min-h-screen">
-      <Button>Click</Button>
+     <h1>Welcome to the Home Page</h1>
     </main>
   );
 }
