@@ -44,8 +44,8 @@
     },
     "exports": {
         "./components/ui/*": {
-            "types": "./dist/components/ui/*.d.ts",
-            "default": "./dist/components/ui/*.js"
+            "types": "./src/components/ui/*.tsx",
+            "default": "./dist/components/ui/*.jsx"
         },
         "./globals.css": {
             "default": "./src/globals.css"

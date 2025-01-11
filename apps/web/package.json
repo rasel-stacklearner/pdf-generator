@@ -12,7 +12,9 @@
     "react": "catalog:react19",
     "react-dom": "catalog:react19",
     "next": "catalog:nextjs15",
-    "@repo/ui": "workspace:*"
+    "@repo/ui": "workspace:*",
+    "@repo/date": "workspace:*",
+    "@repo/tailwind-config": "workspace:*"
   },
   "devDependencies": {
     "typescript": "^5",

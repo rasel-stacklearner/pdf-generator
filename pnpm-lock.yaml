@@ -101,6 +101,12 @@ importers:
 
   apps/web:
     dependencies:
+      '@repo/date':
+        specifier: workspace:*
+        version: link:../../packages/date
+      '@repo/tailwind-config':
+        specifier: workspace:*
+        version: link:../../tooling/tailwind
       '@repo/ui':
         specifier: workspace:*
         version: link:../../packages/ui
@@ -147,9 +153,6 @@ importers:
 
   packages/core:
     dependencies:
-      '@repo/date':
-        specifier: workspace:*
-        version: link:../date
       '@repo/db':
         specifier: workspace:*
         version: link:../db

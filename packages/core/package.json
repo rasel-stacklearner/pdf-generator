@@ -16,8 +16,7 @@
     "author": "",
     "license": "MIT",
     "dependencies": {
-        "@repo/db": "workspace:*",
-        "@repo/date": "workspace:*"
+        "@repo/db": "workspace:*"
     },
     "devDependencies": {
         "@repo/typescript-config": "workspace:*",
