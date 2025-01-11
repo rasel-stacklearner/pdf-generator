@@ -36,8 +36,10 @@
       ]
     },
     "dev": {
-      "cache": false,
-      "persistent": true
+      "dependsOn": [
+        "^dev"
+      ],
+      "cache": false
     }
   },
   "remoteCache": {
