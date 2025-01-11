@@ -9,7 +9,7 @@
     },
     "exports": {
         "./invoice": {
-            "types": "./src/invoice/index.ts",
+            "types": "./dist/invoice/index.d.ts",
             "default": "./dist/invoice/index.js"
         }
     },
