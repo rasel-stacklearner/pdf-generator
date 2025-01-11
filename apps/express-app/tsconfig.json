@@ -14,6 +14,7 @@
     "forceConsistentCasingInFileNames": true,
     "moduleResolution": "nodenext",
     "resolveJsonModule": true,
+    "sourceMap": true,
     "baseUrl": ".",
   },
   "include": [
