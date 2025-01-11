@@ -4,6 +4,20 @@
   "author": "Rasel Hossain",
   "private": "true",
   "main": "./src/index.ts",
+  "exports": {
+    "./db-client": {
+      "types": "./src/config/client.ts",
+      "default": "./dist/config/client.js"
+    },
+    "./schemas": {
+      "types": "./src/schemas/index.ts",
+      "default": "./dist/schemas/index.js"
+    },
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./dist/index.js"
+    }
+  },
   "scripts": {
     "build": "tsc",
     "dev": "tsc -w",
