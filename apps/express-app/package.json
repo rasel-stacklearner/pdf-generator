@@ -1,5 +1,5 @@
 {
-  "name": "express-app",
+  "name": "@repo/express-app",
   "version": "1.0.0",
   "description": "Express.js application with TypeScript",
   "main": "dist/index.js",
