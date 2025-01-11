@@ -7,16 +7,22 @@
   "scripts": {
     "build": "tsc",
     "dev": "tsc -w",
-    "clean": "rm -rf dist"
+    "clean": "rm -rf dist",
+    "db:migrate": "node -r esbuild-register ./src/config/migrate.ts",
+    "db:generate": "drizzle-kit generate:pg --schema=./src/schemas"
   },
   "exports": {
-    "./invoice": {
+    ".": {
       "types": "./dist/types/index.d.ts",
       "default": "./dist/index.js"
     },
     "./db-client": {
       "types": "./dist/types/config/client.d.ts",
       "default": "./dist/config/client.js"
+    },
+    "./invoice": {
+      "types": "./dist/types/schemas/invoice.d.ts",
+      "default": "./dist/schemas/invoice.js"
     }
   },
   "dependencies": {
