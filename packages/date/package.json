@@ -5,7 +5,7 @@
     "type": "module",
     "exports": {
         "./date": {
-            "types": "./src/date.ts",
+            "types": "./dist/types/date/index.d.ts",
             "default": "./dist/date.js"
         }
     },

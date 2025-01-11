@@ -2,7 +2,18 @@ import { db } from "@repo/db/db-client";
 import { InvoiceTable, InvoiceItemTable, type Invoice, type NewInvoice, type UpdateInvoice, type NewInvoiceItem } from "@repo/db/invoice";
 import { eq } from "drizzle-orm";
 
-
+/**
+ * @param {id} string- The unique id
+ * @param {name} string- The name of the invoice
+ * @param {description} string- The description of the invoice
+ * @param {amount} number- The amount of the invoice
+ */
+export interface IInvoice {
+    id: string;
+    name: string;
+    description: string;
+    amount: number;
+}
 // Repository Implementation
 export class InvoiceRepository {
 

@@ -2,11 +2,11 @@
   "author": "Rasel Hossain",
   "exports": {
     "./invoice": {
-      "types": "./src/schemas/invoice/index.ts",
-      "default": "./dist/schemas/invoice/index.js"
+      "types": "./dist/types/schemas/index.d.ts",
+      "default": "./dist/schemas/index.js"
     },
     "./db-client": {
-      "types": "./src/config/client.ts",
+      "types": "./dist/types/config/client.d.ts",
       "default": "./dist/config/client.js"
     }
   },
@@ -35,6 +35,7 @@
   "private": true,
   "scripts": {
     "build": "tsc",
+    "dev": "tsc -w",
     "db:migrate": "node -r esbuild-register ./src/config/migrate.ts",
     "db:generate": "drizzle-kit generate:pg --schema=./src/schemas"
   },

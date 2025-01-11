@@ -4,11 +4,12 @@
     "description": "Core package for the z-monorepo project",
     "main": "index.js",
     "scripts": {
-        "build": "tsc"
+        "build": "tsc",
+        "dev": "tsc -w"
     },
     "exports": {
         "./invoice": {
-            "types": "./src/invoice/index.ts",
+            "types": "./dist/types/invoice/index.d.ts",
             "default": "./dist/invoice/index.js"
         }
     },
