@@ -8,10 +8,10 @@
     ],
     "outDir": "./dist",
     "rootDir": "./src",
-    "moduleResolution": "nodenext",
-    "declarationDir": "./dist/types",
+    "moduleResolution": "node16",
+    "baseUrl": ".",
     "sourceMap": true,
-    "baseUrl": "."
+    "declarationDir": "./dist/types"
   },
   "include": [
     "src/**/*"
