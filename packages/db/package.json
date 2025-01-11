@@ -2,8 +2,7 @@
   "name": "@repo/db",
   "version": "1.0.0",
   "author": "Rasel Hossain",
-  "main": "./dist/index.js",
-  "types": "./dist/types/index.d.ts",
+  "private": "true",
   "scripts": {
     "build": "tsc",
     "dev": "tsc -w",
